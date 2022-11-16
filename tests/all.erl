@@ -54,7 +54,7 @@ setup()->
 
     ok=application:start(pod_app),
     pong=common:ping(),
-    pong=sd:ping(),
+    pong=resource_discovery_server:ping(),
     pong=nodelog:ping(),
     
     io:format("Stop OK !!! ~p~n",[?FUNCTION_NAME]),

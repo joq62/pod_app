@@ -31,8 +31,8 @@ init([]) ->
                  period => 1},
     ChildSpecs = [#{id=>common,
 		    start=>{common,start,[]}},
-		  #{id=>sd,
-		    start=>{sd,start,[]}},
+		  #{id=>resource_discovery,
+		    start=>{resource_discovery_server,start,[]}},
 		  #{id=>nodelog,
 		    start=>{nodelog,start,[]}}
 		 ],
