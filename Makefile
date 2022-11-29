@@ -30,6 +30,7 @@ eunit:
 	rm -rf  *~ */*~ src/*.beam tests/*.beam;
 	rm -rf erl_cra*;
 	rm -rf tests_ebin;
+	rm -rf rebar.lock;
 	rm -rf ebin;
 #	tests 
 	mkdir tests_ebin;
