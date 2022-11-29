@@ -1,6 +1,7 @@
 all:
 	rm -rf  *~ */*~ src/*.beam tests/*.beam;
 	rm -rf erl_cra*;
+	rm -rf rebar.lock;
 	rm -rf ebin;
 	mkdir ebin;		
 	rebar3 compile;	
@@ -19,7 +20,8 @@ build:
 	rm -rf  *~ */*~ src/*.beam tests/*.beam;
 	rm -rf erl_cra*;
 	rm -rf ebin;
-	mkdir ebin;		
+	mkdir ebin;
+	rm -rf rebar.lock;
 	rebar3 compile;	
 	cp _build/default/lib/*/ebin/* ebin;
 	rm -rf _build;
