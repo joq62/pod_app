@@ -32,9 +32,7 @@ init([]) ->
     ChildSpecs = [#{id=>common,
 		    start=>{common,start,[]}},
 		  #{id=>resource_discovery,
-		    start=>{resource_discovery_server,start,[]}},
-		  #{id=>nodelog,
-		    start=>{nodelog,start,[]}}
+		    start=>{resource_discovery_server,start,[]}}
 		 ],
     {ok, {SupFlags, ChildSpecs}}.
 
