@@ -4,5 +4,5 @@
   0},
  {<<"resource_discovery">>,
   {git,"https://github.com/joq62/resource_discovery.git",
-       {ref,"9c24e69f6840dd4b67b6d8753e5b31f89606bf5c"}},
+       {ref,"255b8277f58037b65e023ffee6aaf0a59f6b0156"}},
   0}].
